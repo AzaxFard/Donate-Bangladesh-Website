@@ -6,6 +6,7 @@ document.getElementById('btn-donate-noakhali').addEventListener('click', functio
     const balance = getTextFieldValueById('account-balance');
 
     if (donateMoney <= 0 || isNaN(donateMoney)) {
+        document.getElementById('btn-donate-noakhali').addEventListener('click', modal1.close())
         alert('Failed to donate money! Write donation amount Properly');
         return;
     }
@@ -17,26 +18,21 @@ document.getElementById('btn-donate-noakhali').addEventListener('click', functio
 
         document.getElementById('account-balance').innerText = newBalance;
         document.getElementById('fund-noakhali').innerText = newfund;
+
+        document.getElementById('btn-donate-noakhali').addEventListener('click', modal1.showmodal())
     }
     else {
+        document.getElementById('btn-donate-noakhali').addEventListener('click', modal1.close())
         alert('Not enough money in account');
         return;
     }
 
     // history log
     const div = document.createElement('div')
-    div.classList.add('border')
-    div.classList.add('rounded-md')
-    div.classList.add('border-slate-100')
-    div.classList.add('p-5')
-    div.classList.add('w-full')
-    div.classList.add('border')
-    div.classList.add('rounded-md')
+    div.classList.add('border','rounded-md','border-slate-100','p-5','w-full','border', 'mb-5')
 
     const h1 = document.createElement('h1');
-    h1.classList.add('font-bold')
-    h1.classList.add('text-xl')
-    h1.classList.add('mb-5')
+    h1.classList.add('font-bold','text-xl','mb-5')
     h1.innerText = `${donateMoney} Taka is Donated for Flood at Noakhali, Bangladesh`;
 
     // adding Time
@@ -61,6 +57,7 @@ document.getElementById('btn-donate-feni').addEventListener('click', function (e
     const balance = getTextFieldValueById('account-balance');
 
     if (donateMoney <= 0 || isNaN(donateMoney)) {
+        document.getElementById('btn-donate-noakhali').addEventListener('click', modal1.close())
         alert('Failed to donate money! Write donation amount Properly');
         return;
     }
@@ -72,26 +69,21 @@ document.getElementById('btn-donate-feni').addEventListener('click', function (e
 
         document.getElementById('account-balance').innerText = newBalance;
         document.getElementById('fund-feni').innerText = newfund;
+
+        document.getElementById('btn-donate-feni').addEventListener('click', modal1.showmodal())
     }
     else {
+        document.getElementById('btn-donate-noakhali').addEventListener('click', modal1.close())
         alert('Not enough money in account');
         return;
     }
 
     // history log 
     const div = document.createElement('div')
-    div.classList.add('border')
-    div.classList.add('rounded-md')
-    div.classList.add('border-slate-100')
-    div.classList.add('p-5')
-    div.classList.add('w-full')
-    div.classList.add('border')
-    div.classList.add('rounded-md')
+    div.classList.add('border','rounded-md','border-slate-100','p-5','w-full','border','mb-5')
 
     const h1 = document.createElement('h1');
-    h1.classList.add('font-bold')
-    h1.classList.add('text-xl')
-    h1.classList.add('mb-5')
+    h1.classList.add('font-bold','text-xl','mb-5')
     h1.innerText = `${donateMoney} Taka is Donated for Flood relief in Feni, Bangladesh`;
 
     // adding Time
@@ -117,6 +109,7 @@ document.getElementById('btn-donate-protest').addEventListener('click', function
     const balance = getTextFieldValueById('account-balance');
 
     if (donateMoney <= 0 || isNaN(donateMoney)) {
+        document.getElementById('btn-donate-noakhali').addEventListener('click', modal1.close())
         alert('Failed to donate money! Write donation amount Properly');
         return;
     }
@@ -128,26 +121,21 @@ document.getElementById('btn-donate-protest').addEventListener('click', function
 
         document.getElementById('account-balance').innerText = newBalance;
         document.getElementById('fund-protest').innerText = newfund;
+
+        document.getElementById('btn-donate-protest').addEventListener('click', modal1.showmodal())
     }
     else {
+        document.getElementById('btn-donate-noakhali').addEventListener('click', modal1.close())
         alert('Not enough money in account');
         return;
     }
 
     // history log
     const div = document.createElement('div')
-    div.classList.add('border')
-    div.classList.add('rounded-md')
-    div.classList.add('border-slate-100')
-    div.classList.add('p-5')
-    div.classList.add('w-full')
-    div.classList.add('border')
-    div.classList.add('rounded-md')
+    div.classList.add('border','rounded-md','border-slate-100','p-5','w-full','border','mb-5')
 
     const h1 = document.createElement('h1');
-    h1.classList.add('font-bold')
-    h1.classList.add('text-xl')
-    h1.classList.add('mb-5')
+    h1.classList.add('font-bold','text-xl','mb-5')
     h1.innerText = `${donateMoney} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh`;
 
     // adding Time
