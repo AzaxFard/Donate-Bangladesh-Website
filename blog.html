@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog || Donate Bangladesh</title>
+
+    <!-- daisyUI CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        .font-lexend {
+            font-family: "Lexend", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
+
+</head>
+
+<body class="font-lexend">
+    <header class="mx-auto py-6 max-sm:p-3 bg-[#F9F7F3] sticky top-0">
+        <nav class="flex justify-around items-center pb-5">
+            <div>
+                <button id="btn-home" class="rounded-md bg-[#B4F461] px-5 py-1 font-bold text-xl">Home</button>
+            </div>
+            <div class="flex items-center">
+                <img src="assets/logo.png" alt="">
+                <h1 class="px-3 font-bold text-2xl">Donate Bangladesh</h1>
+            </div>
+            <div class="flex items-center">
+                <img src="assets/coin.png" alt="">
+                <p id="account-balance" class="px-2 text-xl">5500</p>
+                <p class="text-xl">BDT</p>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-screen-xl mx-auto flex flex-col py-14 items-center gap-5">
+        <div class="border rounded-md p-5 w-full">
+            <h3 class="font-bold text-2xl mb-3">What is the Document Object Model (DOM)?</h3>
+            <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the structure
+                of an HTML or XML document as a tree of objects, where each part of the document (such as elements,
+                attributes, and text) is a node in the tree. Through the DOM, programming languages like JavaScript can
+                dynamically interact with, modify, and update the content, structure, and style of a webpage.</p>
+        </div>
+        <div class="border rounded-md p-5 w-full">
+            <h3 class="font-bold text-2xl mb-3">How do you select and element from the DOM?</h3>
+            <p>You can select an element from the DOM (Document Object Model) using various JavaScript methods. The most
+                common methods are:
+                <br>
+                <span class="font-bold">1.getElementById():</span>
+                Selects an element by its id attribute.
+                <br>
+                <span class="font-bold">2.getElementsByClassName():</span>
+                Selects all elements with a specific class name. Returns a collection (HTMLCollection).
+                <br>
+                <span class="font-bold">3.getElementsByTagName():</span>
+                Selects all elements with a specific tag name (e.g., div, p). Also returns a collection.
+                <br>
+                <span class="font-bold">4.querySelector():</span>
+                Selects the first element that matches a specified CSS selector.
+                <br>
+                <span class="font-bold">5.querySelectorAll():</span>
+                Selects all elements that match a specified CSS selector. Returns a NodeList.
+                <br>
+                These methods provide flexible ways to access and manipulate specific parts of a webpage.
+            </p>
+        </div>
+        <div class="border rounded-md p-5 w-full">
+            <h3 class="font-bold text-2xl mb-3">What is event delegation in the context of the DOM?</h3>
+            <p>Event delegation is a technique in JavaScript for handling events at a higher level in the DOM rather
+                than attaching event listeners to individual elements. Instead of adding event listeners to multiple
+                child elements, you attach a single event listener to a parent element. This listener then captures
+                events that bubble up from the child elements.</p>
+        </div>
+        <div class="border rounded-md p-5 w-full">
+            <h3 class="font-bold text-2xl mb-3">How do you manipulate an element's attributes and styles using the DOM?
+            </h3>
+            <p>You can manipulate an element's attributes and styles using the DOM in JavaScript as follows:
+                <br>
+                1. <span class="font-bold">Manipulating Attributes</span> 
+                <br>
+                setAttribute(): Adds or changes an attribute.
+                <br>
+                getAttribute(): Retrieves the value of an attribute.
+                <br>
+                removeAttribute(): Removes an attribute.
+                <br>
+                2. <span class="font-bold">Manipulating Styles</span>  
+                <br>
+                style Property: Directly changes an element's inline CSS styles.
+                <br>
+                classList.add(): Adds a class to an element.
+                <br>
+                classList.remove(): Removes a class from an element.
+                <br>
+                These methods allow you to dynamically modify HTML elements and their styles directly from JavaScript
+            </p>
+        </div>
+    </main>
+    <script src="js/utilities.js"></script>
+    <script src="js/donate.js"></script>
+    <script src="js/tabChangeBlog.js"></script>
+
+    <footer id="footer" class="mx-auto py-16 max-sm:p-3 bg-[#F9F7F3]"></footer>
+</body>
+
+</html>

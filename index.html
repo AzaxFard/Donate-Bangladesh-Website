@@ -25,10 +25,10 @@
 </head>
 
 <body class="font-lexend">
-    <header class="mx-auto py-6 max-sm:p-3 bg-[#F9F7F3]">
+    <header class="mx-auto py-6 max-sm:p-3 bg-[#F9F7F3] sticky top-0">
         <nav class="flex justify-around items-center pb-5">
             <div>
-                <button class="rounded-md bg-[#B4F461] px-5 py-1 font-bold text-xl">Blog</button>
+                <button id="btn-blog" class="rounded-md bg-[#B4F461] px-5 py-1 font-bold text-xl">Blog</button>
             </div>
             <div class="flex items-center">
                 <img src="assets/logo.png" alt="">
@@ -45,7 +45,7 @@
     <main class="max-w-screen-xl mx-auto flex flex-col py-14 items-center">
         <!-- DONATION & HISTORY buttons -->
         <div class="flex gap-2">
-            <button id="btn-donation" class="rounded-md bg-[#B4F461] px-5 py-1 font-bold">Donation</button>
+            <button id="btn-donation" class="rounded-md bg-[#B4F461] px-5 py-1 font-bold border">Donation</button>
             <button id="btn-history" class="rounded-md px-5 py-1 border">History</button>
         </div>
         <section id="donation-section">
@@ -145,6 +145,7 @@
     <script src="js/utilities.js"></script>
     <script src="js/donate.js"></script>
     <script src="js/tabChange.js"></script>
+    
     <footer id="footer" class="mx-auto py-16 max-sm:p-3 bg-[#F9F7F3]"></footer>
 </body>
 

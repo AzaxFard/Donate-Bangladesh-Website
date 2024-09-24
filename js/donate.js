@@ -19,7 +19,6 @@ document.getElementById('btn-donate-noakhali').addEventListener('click', functio
         document.getElementById('account-balance').innerText = newBalance;
         document.getElementById('fund-noakhali').innerText = newfund;
 
-        document.getElementById('btn-donate-noakhali').addEventListener('click', modal1.showmodal())
     }
     else {
         document.getElementById('btn-donate-noakhali').addEventListener('click', modal1.close())
@@ -70,7 +69,6 @@ document.getElementById('btn-donate-feni').addEventListener('click', function (e
         document.getElementById('account-balance').innerText = newBalance;
         document.getElementById('fund-feni').innerText = newfund;
 
-        document.getElementById('btn-donate-feni').addEventListener('click', modal1.showmodal())
     }
     else {
         document.getElementById('btn-donate-noakhali').addEventListener('click', modal1.close())
@@ -122,7 +120,6 @@ document.getElementById('btn-donate-protest').addEventListener('click', function
         document.getElementById('account-balance').innerText = newBalance;
         document.getElementById('fund-protest').innerText = newfund;
 
-        document.getElementById('btn-donate-protest').addEventListener('click', modal1.showmodal())
     }
     else {
         document.getElementById('btn-donate-noakhali').addEventListener('click', modal1.close())
